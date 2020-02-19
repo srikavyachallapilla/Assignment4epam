@@ -12,7 +12,9 @@ class CompundandSimpleInterest{
 	return simple_interest;
 	}
 	double compoundInterest(int principal, double rate_of_interest, int time_period){
-		double compound_interest = (1+(rate_of_interest / 100));
+		double d = (1+(rate_of_interest / 100));
+		double compound_interest = principal * Math.pow(d, time_period);
+		
 		return compound_interest;
 	}
 }
